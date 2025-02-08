@@ -7,11 +7,11 @@ def classify_strings(input_string):
     count_compound = 0
     
     for word in words:
-        if word.isdigit():  # Verifica si es un número entero
+        if word.isdigit():  
             count_integer += 1
-        elif word.isalpha():  # Verifica si es una palabra (solo letras)
+        elif word.isalpha(): 
             count_word += 1
-        elif re.match(r'^[a-zA-Z]+\d+$', word):  # Verifica si es compuesta (letras + números)
+        elif re.match(r'^[a-zA-Z]+\d+$', word): 
             count_compound += 1
     
     total = count_integer + count_word + count_compound
@@ -28,7 +28,7 @@ def classify_strings(input_string):
     output += ", ".join(categories)
     return output
 
-# Ejemplo de uso
+
 inputs = [
     "5896475 agosto variable1",
     "Atotonilco Pachuca Actopan",
