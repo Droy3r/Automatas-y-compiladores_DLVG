@@ -7,7 +7,7 @@ extern FILE *yyin;
 
 int totalCasas = 0, totalLugares = 0, totalPersonajes = 0;
 
-// Personajes
+// Pj
 int pEddard = 0, pCatelyn = 0, pArya = 0, pSansa = 0;
 int pRobert = 0, pJoffrey = 0, pStannis = 0, pAegon = 0, pDaenerys = 0;
 int pAerys = 0, pTywin = 0, pJaime = 0, pTyrion = 0, pCersei = 0;
@@ -16,23 +16,23 @@ int pAerys = 0, pTywin = 0, pJaime = 0, pTyrion = 0, pCersei = 0;
 int cStark = 0, cArryn = 0, cTully = 0, cGreyjoy = 0, cLannister = 0;
 int cTyrell = 0, cMartell = 0, cBaratheon = 0, cTargaryen = 0;
 
-// Lugares
+// ubicaciones
 int cWesteros = 0, cInvernalia = 0, cDesembarco = 0, cNido = 0, cAltojardin = 0;
 int cAguasdulces = 0, cRocadragon = 0, cCasterly = 0, cBastion = 0, cDorne = 0;
 %}
 
 
 %%
-// Lugares
+// Ubicaciones
 Westeros                 { cWesteros++; totalLugares++; }
 Invernalia               { cInvernalia++; totalLugares++; }
-Nido[ ]de[ ][酇a]guilas { cNido++; totalLugares++; }
-Altojard[韎]n            { cAltojardin++; totalLugares++; }
-Rocadrag[髈]n            { cRocadragon++; totalLugares++; }
+Nido[ ]de[ ][谩Aa]guilas { cNido++; totalLugares++; }
+Altojard[铆i]n            { cAltojardin++; totalLugares++; }
+Rocadrag[贸o]n            { cRocadragon++; totalLugares++; }
 Dorne                    { cDorne++; totalLugares++; }
 Roca[ ][Cc]asterly       { cCasterly++; totalLugares++; }
 Aguasdulces              { cAguasdulces++; totalLugares++; }
-Basti[髈]n[ ]de[ ][Tt]ormentas { cBastion++; totalLugares++; }
+Basti[贸o]n[ ]de[ ][Tt]ormentas { cBastion++; totalLugares++; }
 Desembarco[ ]del[ ]Rey   { cDesembarco++; totalLugares++; }
 
 
@@ -48,7 +48,7 @@ Baratheon    { cBaratheon++; totalCasas++; }
 Stark        { cStark++; totalCasas++; }
 
 
-// Personajes
+// Pj
 Eddard     { pEddard++; totalPersonajes++; }
 Catelyn    { pCatelyn++; totalPersonajes++; }
 Arya       { pArya++; totalPersonajes++; }
@@ -87,12 +87,12 @@ int main(int argc, char **argv) {
     printf("Westeros: %d (%.2f%%)\n", cWesteros, calcularPorcentaje(cWesteros, totalLugares));
     printf("Invernalia: %d (%.2f%%)\n", cInvernalia, calcularPorcentaje(cInvernalia, totalLugares));
     printf("Desembarco del Rey: %d (%.2f%%)\n", cDesembarco, calcularPorcentaje(cDesembarco, totalLugares));
-    printf("Nido de 羐uilas: %d (%.2f%%)\n", cNido, calcularPorcentaje(cNido, totalLugares));
-    printf("Altojard韓: %d (%.2f%%)\n", cAltojardin, calcularPorcentaje(cAltojardin, totalLugares));
+    printf("Nido de 脕guilas: %d (%.2f%%)\n", cNido, calcularPorcentaje(cNido, totalLugares));
+    printf("Altojard铆n: %d (%.2f%%)\n", cAltojardin, calcularPorcentaje(cAltojardin, totalLugares));
     printf("Aguasdulces: %d (%.2f%%)\n", cAguasdulces, calcularPorcentaje(cAguasdulces, totalLugares));
-    printf("Rocadrag髇: %d (%.2f%%)\n", cRocadragon, calcularPorcentaje(cRocadragon, totalLugares));
+    printf("Rocadrag贸n: %d (%.2f%%)\n", cRocadragon, calcularPorcentaje(cRocadragon, totalLugares));
     printf("Roca Casterly: %d (%.2f%%)\n", cCasterly, calcularPorcentaje(cCasterly, totalLugares));
-    printf("Basti髇 de Tormentas: %d (%.2f%%)\n", cBastion, calcularPorcentaje(cBastion, totalLugares));
+    printf("Basti贸n de Tormentas: %d (%.2f%%)\n", cBastion, calcularPorcentaje(cBastion, totalLugares));
     printf("Dorne: %d (%.2f%%)\n", cDorne, calcularPorcentaje(cDorne, totalLugares));
 
     printf("\n=== Casas de GoT ===\n");
@@ -107,7 +107,7 @@ int main(int argc, char **argv) {
     printf("Casa Baratheon: %d (%.2f%%)\n", cBaratheon, calcularPorcentaje(cBaratheon, totalCasas));
     printf("Casa Targaryen: %d (%.2f%%)\n", cTargaryen, calcularPorcentaje(cTargaryen, totalCasas));
 
-    printf("\n=== H閞oes y Villanos ===\n");
+    printf("\n=== H茅roes y Villanos ===\n");
     printf("Total de menciones a personajes: %d\n", totalPersonajes);
     printf("Eddard: %d (%.2f%%)\n", pEddard, calcularPorcentaje(pEddard, totalPersonajes));
     printf("Catelyn: %d (%.2f%%)\n", pCatelyn, calcularPorcentaje(pCatelyn, totalPersonajes));
