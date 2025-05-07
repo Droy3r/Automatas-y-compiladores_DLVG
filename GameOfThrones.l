@@ -5,7 +5,7 @@
 
 extern FILE *yyin;
 
-int totalCasas = 0, totalLugares = 0, totalPersonajes = 0;
+int totalCasas = 0, totalUbicaciones = 0, totalPersonajes = 0;
 
 // Pj
 int pEddard = 0, pCatelyn = 0, pArya = 0, pSansa = 0;
@@ -80,16 +80,16 @@ int main(int argc, char **argv) {
 
     printf("\n=== Total de ubicaciones por mencion ===\n");
     printf("Total de menciones a lugares: %d\n", totalLugares);
-    printf("Westeros: %d (%.2f%%)\n", cWesteros, calcularPorcentaje(cWesteros, totalLugares));
-    printf("Invernalia: %d (%.2f%%)\n", cInvernalia, calcularPorcentaje(cInvernalia, totalLugares));
-    printf("Desembarco del Rey: %d (%.2f%%)\n", cDesembarco, calcularPorcentaje(cDesembarco, totalLugares));
-    printf("Nido de Águilas: %d (%.2f%%)\n", cNido, calcularPorcentaje(cNido, totalLugares));
-    printf("Altojardín: %d (%.2f%%)\n", cAltojardin, calcularPorcentaje(cAltojardin, totalLugares));
-    printf("Aguasdulces: %d (%.2f%%)\n", cAguasdulces, calcularPorcentaje(cAguasdulces, totalLugares));
-    printf("Rocadragón: %d (%.2f%%)\n", cRocadragon, calcularPorcentaje(cRocadragon, totalLugares));
-    printf("Roca Casterly: %d (%.2f%%)\n", cCasterly, calcularPorcentaje(cCasterly, totalLugares));
-    printf("Bastión de Tormentas: %d (%.2f%%)\n", cBastion, calcularPorcentaje(cBastion, totalLugares));
-    printf("Dorne: %d (%.2f%%)\n", cDorne, calcularPorcentaje(cDorne, totalLugares));
+    printf("Westeros: %d (%.2f%%)\n", cWesteros, calcularPorcentaje(cWesteros, totalUbicaciones));
+    printf("Invernalia: %d (%.2f%%)\n", cInvernalia, calcularPorcentaje(cInvernalia, totalUbicaciones));
+    printf("Desembarco del Rey: %d (%.2f%%)\n", cDesembarco, calcularPorcentaje(cDesembarco, totalUbicaciones));
+    printf("Nido de Águilas: %d (%.2f%%)\n", cNido, calcularPorcentaje(cNido, totalUbicaciones));
+    printf("Altojardín: %d (%.2f%%)\n", cAltojardin, calcularPorcentaje(cAltojardin, totalUbicaciones));
+    printf("Aguasdulces: %d (%.2f%%)\n", cAguasdulces, calcularPorcentaje(cAguasdulces, totalUbicaciones));
+    printf("Rocadragón: %d (%.2f%%)\n", cRocadragon, calcularPorcentaje(cRocadragon, totalUbicaciones));
+    printf("Roca Casterly: %d (%.2f%%)\n", cCasterly, calcularPorcentaje(cCasterly, totalUbicaciones));
+    printf("Bastión de Tormentas: %d (%.2f%%)\n", cBastion, calcularPorcentaje(cBastion, totalUbicaciones));
+    printf("Dorne: %d (%.2f%%)\n", cDorne, calcularPorcentaje(cDorne, totalUbicaciones));
 
     printf("\n=== Casas de GoT ===\n");
     printf("Total de menciones a casas: %d\n", totalCasas);
