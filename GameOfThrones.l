@@ -23,7 +23,7 @@ int cAguasdulces = 0, cRocadragon = 0, cCasterly = 0, cBastion = 0, cDorne = 0;
 
 
 %%
-// Ubicaciones
+
 Westeros                 { cWesteros++; totalLugares++; }
 Invernalia               { cInvernalia++; totalLugares++; }
 Nido[ ]de[ ][áAa]guilas { cNido++; totalLugares++; }
@@ -35,8 +35,6 @@ Aguasdulces              { cAguasdulces++; totalLugares++; }
 Basti[óo]n[ ]de[ ][Tt]ormentas { cBastion++; totalLugares++; }
 Desembarco[ ]del[ ]Rey   { cDesembarco++; totalLugares++; }
 
-
-// Casas
 Arryn        { cArryn++; totalCasas++; }
 Tully        { cTully++; totalCasas++; }
 Greyjoy      { cGreyjoy++; totalCasas++; }
@@ -47,8 +45,6 @@ Martell      { cMartell++; totalCasas++; }
 Baratheon    { cBaratheon++; totalCasas++; }
 Stark        { cStark++; totalCasas++; }
 
-
-// Pj
 Eddard     { pEddard++; totalPersonajes++; }
 Catelyn    { pCatelyn++; totalPersonajes++; }
 Arya       { pArya++; totalPersonajes++; }
